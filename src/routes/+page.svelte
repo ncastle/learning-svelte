@@ -1,2 +1,8 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<h1>Welcome to Learning Svelte</h1>
+<p>Click around to see different concepts of svelte implemented</p>
+
+<style>
+	* {
+		text-align: center;
+	}
+</style>
