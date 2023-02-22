@@ -1,6 +1,10 @@
 <script>
 	/** @type {import('./$types').PageData} */
 	export let data;
+
+	function throwExampleError() {
+		throw 'Example Error';
+	}
 </script>
 
 <h1>
@@ -172,10 +176,27 @@
 	will be covered in greater detail on the <a href="/form-actions">Form Actions</a> page
 </p>
 
-<p>Last</p>
+<!---------------------------------------------------------------------------------------------------->
 
-<a target="_blank" href="https://icons8.com/icon/59826/link">Link</a> icon by
-<a target="_blank" href="https://icons8.com">Icons8</a> why
+<h3 id="error">+error</h3>
+
+<form method="POST">
+	<p>
+		If an error is thrown during a <code>load</code> function, a custom <code>+error.svelete</code>
+		page can be customized on a per route basis.
+		<button class="form-btn">See this in action</button>
+	</p>
+</form>
+
+<p>
+	If there is no error page in the route the error occurs, SvelteKit will look for the closest error
+	boundary above the current route
+</p>
+
+<footer>
+	<a target="_blank" href="https://icons8.com/icon/59826/link">Link</a> icon by
+	<a target="_blank" href="https://icons8.com">Icons8</a>
+</footer>
 
 <style>
 	h1::after {
@@ -231,7 +252,16 @@
 		line-height: 2rem;
 	}
 
-	p:last-of-type {
-		margin-bottom: 5vh;
+	footer {
+		margin-top: 7vh;
+		height: 5vh;
+	}
+
+	.form-btn {
+		padding: 0.5rem;
+		border-radius: 0.5rem;
+		cursor: pointer;
+		/* border: none; */
+		/* background-color: 'white'; */
 	}
 </style>
