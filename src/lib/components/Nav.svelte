@@ -2,7 +2,10 @@
 	const pages = [
 		{ name: 'Home', href: '/' },
 		{ name: 'About', href: '/about' },
-		{ name: 'Routing', href: '/routing' }
+		{ name: 'Routing', href: '/routing' },
+		{ name: 'Loading Data', href: '/loading' },
+		{ name: 'Form Actions', href: '/form-actions' },
+		{ name: 'Page Options', href: '/page-options' }
 	];
 </script>
 
