@@ -1,7 +1,8 @@
 <script>
 	const pages = [
 		{ name: 'Home', href: '/' },
-		{ name: 'About', href: '/about' }
+		{ name: 'About', href: '/about' },
+		{ name: 'Routing', href: '/routing' }
 	];
 </script>
 
@@ -18,7 +19,6 @@
 		width: 100%;
 		border-bottom: 1px solid black;
 		height: 5vh;
-		margin-bottom: 1rem;
 		justify-content: center;
 		align-items: center;
 	}
